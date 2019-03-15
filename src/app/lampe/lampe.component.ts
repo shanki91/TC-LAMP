@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { preserveWhitespacesDefault } from '@angular/compiler';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-lampe',
+  templateUrl: './lampe.component.html',
+  styleUrls: ['./lampe.component.scss']
 })
-export class AppComponent {
+export class LampeComponent {
+
   title = 'TC-LAMP';
   
   bStatuslampe: boolean = true ; 
@@ -29,5 +29,8 @@ export class AppComponent {
       this.bStatuslampe = !this.bStatuslampe;
   }
 
+
+  
+  
 
 }
