@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-lampe',
@@ -8,15 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class LampeComponent {
 
   title = 'TC-LAMP';
-  
-  bStatuslampe: boolean = true ; 
-  Lampenfarbe: string = 'yellow';
-  Lampenfarbe_bu: string = 'visible';
-  Powerbtntext: string = 'Aus';
+  @Input() bStatuslampe: boolean = true; 
+  @Input() Lampenfarbe: string = 'yellow';
+  @Input()Lampenfarbe_bu: string = 'visible';
+  @Input()Powerbtntext: string = 'Aus';
 
 
 
-    public Changestatelamp() : void  {
+    public Changestatelamp() {
      
      if(this.bStatuslampe == true){
       this.Powerbtntext = 'Ein';

@@ -1,0 +1,20 @@
+<head><title>Supertolle Ampel</title></head>
+<body>
+<div class="ampel">
+<br />
+<app-lampe [Lampenfarbe_bu]="Status1" [Lampenfarbe] = "Farbe1"></app-lampe>
+<br />
+<app-lampe [Lampenfarbe_bu]="Status2" [Lampenfarbe] = "Farbe2"></app-lampe>
+<br />
+<app-lampe [Lampenfarbe_bu]="Status3" [Lampenfarbe] = "Farbe3"></app-lampe>
+<br />
+<br />
+</div>
+<button type="button" (click)=AmpelAus()>Aus</button>
+<br />
+<button type="button" (click)=Ampelweiter()>Wechsel</button>
+<br />
+<button type="button" (click)=Ampeltimer()>Automatikmodus</button>
+
+</body>
+
